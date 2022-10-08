@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;650&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+:root {
+  --white-color: #ffffff;
+  --block-color: #10181d;
+  --grey-color: #636c79;
+  --light-green: #8bb7a2;
+}
+
+/* Global Button Properties */
+button {
+  padding: 10px 35px;
+  background-color: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+.main-box {
+  background-color: var(--grey-color);
+}
+
+.header {
+  padding: 2rem 5rem;
+}
+.navbar .nav-items,
+.nav-items ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-items .logo {
+  margin-right: 30rem;
+}
+.navbar .nav-items li {
+  color: var(--white-color);
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navabar .nav-items .logo img{
+    margin-left: 3rem;
+    
+  }
+  .business {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+  }
+  .business .heroRight h3,
+  small {
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+  .business .heroRight small {
+    margin-top: 0;
+    display: block;
+  }
+  .business .heroRight .email {
+    margin-left: 2rem;
+  }
+
+  .business .heroRight button {
+    display: none;
+  }
+}
+
+/* ----------------- Business Section ------------ */
+.business {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.business .heroLeft .business-img img {
+  width: 26rem;
+  height: 500px;
+  padding-bottom: 30px;
+  object-fit: cover;
+}
+
+.business .heroRight {
+  margin-top: -6rem;
+}
+
+.business .heroRight h3 {
+  font-size: 3.2rem;
+  color: var(--white-color);
+}
+
+.business .heroRight small {
+  opacity: 0.5;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--white-color);
+}
+
+.business .heroRight .email .email-input {
+  padding: 20px 200px 20px 50px;
+  margin-left: -1.5rem;
+  margin-top: 2rem;
+  outline: none;
+}
+
+.business .heroRight .email button {
+  position: relative;
+  right: 9rem;
+  background-color: var(--light-green);
+}
+
+.business .heroRight .email .fa-envelope {
+  position: relative;
+  left: 1rem;
+}
+
+/* -------------- Connecting Section  ------------------- */
+
+.connection .conn-header h3 {
+  width: 80%;
+  margin-top: 4rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.connection .target,
+h2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.connection .target h2 {
+  font-size: 2rem;
+}
+
+.connection .target p {
+  line-height: 2rem;
+  opacity: 0.5;
+}
+
+.connection .conn-img img {
+  display: flex;
+  justify-content: center;
+  width: 75rem;
+  height: 700px;
+  margin: 3rem 10rem;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .connection .conn-img img {
+    width: 95%;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+}
+
+/*  ------------------ Development Section --------------- */
+
+.development .dev-header {
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.development .dev-jumbotron {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.development .dev-jumbotron .dev-right img {
+  width: 40rem;
+  height: 500px;
+  margin: 3rem 10rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.development .dev-jumbotron .dev-left h3 {
+  font-size: 2.8rem;
+  margin-left: 4rem;
+  width: 150%;
+}
+
+.development .dev-jumbotron .dev-left small {
+  display: block;
+  opacity: 0.5;
+  line-height: 2;
+  margin-left: 4rem;
+  font-size: 1rem;
+}
+
+.development .dev-jumbotron button {
+  margin-left: 4rem;
+  margin-top: 2rem;
+  background-color: var(--light-green);
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .development .dev-jumbotron {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .development .dev-jumbotron .dev-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 115rem;
+    margin-top: 5rem;
+  }
+
+  .development .dev-jumbotron .dev-left small {
+    display: block;
+    width: 150%;
+  }
+
+  .development .dev-jumbotron .dev-right img {
+    width: 90%;
+    position: relative;
+    left: -58rem;
+  }
+}
+
+/*  ------------------------ Marketing Section --------------------- */
+.marketing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.marketing .mark-left img {
+  width: 30rem;
+  height: 580px;
+}
+.marketing .mark-right h3 {
+  font-size: 2.8rem;
+  margin-left: 4rem;
+  width: 100%;
+}
+.marketing .mark-right small {
+  display: block;
+  opacity: 0.5;
+  line-height: 2;
+  margin-left: 4rem;
+  font-size: 1rem;
+}
+
+.marketing .mark-right button {
+  margin-left: 4rem;
+  margin-top: 2rem;
+  background-color: var(--light-green);
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .marketing {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .marketing .mark-right
+  h3 {
+    width: 135%;
+    margin-right: 15rem;
+  }
+
+  .marketing .mark-right,
+  small {
+    width: 70%;
+    margin-right: 15rem;
+  }
+
+  .marketing .mark-right small {
+    display: block;
+    width: 170%;
+    margin-top: 10px;
+  }
+}
+
+/*  --------------- People Section ---------------- */
+.people {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.people .people-right img {
+  width: 38rem;
+  height: 500px;
+}
+
+.people .people-left h3 {
+  font-size: 2.8rem;
+  margin-left: 4rem;
+  width: 150%;
+}
+.people .people-left small {
+  display: block;
+  opacity: 0.5;
+  line-height: 2;
+  margin-left: 4rem;
+  font-size: 1rem;
+}
+
+.people .people-left button {
+  margin-left: 4rem;
+  margin-top: 2rem;
+  background-color: var(--light-green);
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .people {
+    flex-wrap: wrap-reverse;
+  }
+  .people .people-left {
+    width: 60%;
+    display: block;
+    margin-left: -13rem;
+  }
+  .people .people-left small {
+    display: block;
+    width: 150%;
+  }
+}
+
+/* -------------  Team Section  ---------------- */
+.team .team-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6rem;
+  padding: 6rem 0;
+}
+
+.team .team-info h3 {
+  font-size: 2.8rem;
+}
+
+.team .team-info small {
+  display: block;
+  opacity: 0.5;
+  line-height: 2;
+  margin-left: 4rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.team .team-members {
+  display: flex;
+  justify-content: space-evenly;
+}
+.team .team-members .member img {
+  width: 20rem;
+  height: 450px;
+}
+
+.team .team-members .member h5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.team .team-members .member small {
+  opacity: 0.5;
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+.team .team-btn {
+  margin-left: 40rem;
+  margin-top: 2rem;
+  background-color: var(--light-green);
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .team .team-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .team .team-info,
+  h3 {
+    width: 100%;
+    margin-left: 4rem;
+  }
+
+  .team .team-members {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .team .team-members .member small {
+    display: none;
+  }
+
+  .team .team-btn {
+    position: relative;
+    right: 25rem;
+  }
+}
+
+/* ------------------ Footer Section -------------------- */
+footer {
+  background: var(--block-color);
+  color: var(--white-color);
+  padding: 5rem 9rem;
+  margin-top: 5rem;
+}
+
+footer hr {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+footer .footer-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-header .foot-right img {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-menu-list .footer-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  line-height: 3;
+}
+
+.footer .footer-menu-list .footer-list,
+ul {
+  list-style-type: none;
+}
+
+.footer .footer-menu-list .footer-list,
+li {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .footer-header .foot-right img {
+    display: none;
+  }
+  footer .footer-menu-list .footer-list {
+    width: 50%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 3;
+  }
+}
