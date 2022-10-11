@@ -26,3 +26,4 @@ and this is responsive for mobile screens and laptop screens of 600px
 
 
 ## Deployed Link
+[Business Page](https://business-ui-page.netlify.app/)
